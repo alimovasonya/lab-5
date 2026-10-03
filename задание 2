@@ -1,0 +1,32 @@
+/*
+ Студент: Алимова Софья Сергеевна
+ Группа: ПИ 1-1
+ Название: 
+*/
+#include <stdio.h>
+
+int main(void) 
+{
+    int n;
+    printf("enter n (1..100):\n");
+    if (scanf("%d", &n) != 1)
+    {
+        printf("input error\n");
+        return 1;
+    }
+    if (n < 1 || n > 100)
+    {
+        printf("range error\n");
+        return 1;
+    }
+    long long sum = 0;
+    int i = 1;
+    while (i <= n )
+    {
+        sum += i;
+        i++;
+    }
+printf("Sum = %lld\n", sum);
+
+    return 0;
+}
